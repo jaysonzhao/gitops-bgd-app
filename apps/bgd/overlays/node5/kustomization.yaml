@@ -13,11 +13,4 @@ patchesJson6902:
       - op: replace
         path: /spec/template/spec/containers/0/env/0/value
         value: yellow
-helmCharts:
-- name: mlflow-server
-  repo: https://strangiato.github.io/helm-charts/
-  version: "0.5.7"
-  releaseName: mlflow-server
-  valuesFile: values.yaml
-  valuesInline:
-    fullnameOverride: helloagain
+
