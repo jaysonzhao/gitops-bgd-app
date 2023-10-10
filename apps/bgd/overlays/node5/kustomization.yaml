@@ -5,6 +5,7 @@ resources:
 
 components:
 - ../../middleware/mysql
+- ../../middleware/redis
 
 patches:
   - target:
