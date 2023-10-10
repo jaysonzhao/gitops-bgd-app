@@ -16,4 +16,12 @@ patches:
       - op: replace
         path: /spec/template/spec/containers/0/env/0/value
         value: yellow
-
+  - target:
+      version: v1
+      group: apps
+      kind: Deployment
+      name: mysql
+    patch: |-
+      - op: replace
+        path: /spec/template/spec/containers/0/image
+        value: mysql:5.7
