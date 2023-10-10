@@ -6,7 +6,7 @@ resources:
 components:
 - ../../middleware/mysql
 
-patchesJson6902:
+patches:
   - target:
       version: v1
       group: apps
