@@ -26,4 +26,4 @@ patches:
     patch: |-
       - op: replace
         path: /spec/template/spec/containers/0/image
-        value: mysql:5.7
+        value: mysql:5.7.43
