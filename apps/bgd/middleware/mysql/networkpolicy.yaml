@@ -10,6 +10,6 @@ spec:
   - from:
     - ipBlock:
         cidr: 10.0.182.220/32 
-  ports:
-  - protocol: TCP
-    port: 3306
+  - ports:
+    - protocol: TCP
+      port: 3306
