@@ -3,6 +3,8 @@ kind: NetworkPolicy
 metadata:
   name: allow-specific-ip
 spec:
+  policyTypes:
+    - Ingress
   podSelector:
     matchLabels:
       app: mysql
