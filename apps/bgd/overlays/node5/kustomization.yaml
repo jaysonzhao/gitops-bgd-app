@@ -27,3 +27,13 @@ patches:
       - op: replace
         path: /spec/template/spec/containers/0/image
         value: mysql:5.7.43
+  - target:
+      version: v1
+      group: apps
+      kind: Deployment
+      name: .*
+    patch: |-
+      - op: add
+        path: "/spec/template/spec/nodeSelector" 
+        value:           
+          edage: test
