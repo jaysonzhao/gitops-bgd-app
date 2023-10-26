@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-specific-ip-ng
+spec:
+  policyTypes:
+    - Ingress
+  podSelector:
+    matchLabels:
+      app: nginx
+  ingress:
+  - from:
+    - ipBlock:
+        cidr: 10.0.156.46/32 
+  - ports:
+    - protocol: TCP
+      port: 8080
